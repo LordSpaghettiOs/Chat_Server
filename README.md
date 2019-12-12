@@ -10,9 +10,10 @@ Tested on:
 
 Chat Server as a multi-threaded, command-line application that depending on the switches passed, will run as either a chat server or a chat client.  Due to the fact that all communications are passed in **PLAIN TEXT** its not recommended for use outside of a trusted network.
 
-Chat Server has only been tested on Linux.
-
-
+Tested on:
+- Ubuntu 16.04 LTS (Xenial Xerus) with gcc 5.4.0 and cmake 3.12.4
+- Ubuntu 18.04 LTS (Bionic Beaver) with gcc 7.4.0 and cmake 3.12.4
+- OS X with Apple LLVM version 9.1.0 (clang-902.0.39.2) and cmake 3.11.4
 
 ### Usage
 ```
