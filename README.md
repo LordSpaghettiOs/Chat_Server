@@ -1,4 +1,13 @@
 # Chat Server
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Travis (.org)](https://travis-ci.org/caminek/Chat_Server.svg?branch=master)
+
+Tested on:
+- Currently re-testing under Linux
+
+## About
+
 Chat Server as a multi-threaded, command-line application that depending on the switches passed, will run as either a chat server or a chat client.  Due to the fact that all communications are passed in **PLAIN TEXT** its not recommended for use outside of a trusted network.
 
 Chat Server has only been tested on Linux.

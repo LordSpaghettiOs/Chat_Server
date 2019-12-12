@@ -1,0 +1,73 @@
+matrix:
+ include:
+  # Ubuntu 16.04 LTS (Xenial Xerus)
+  - os: linux
+    dist: xenial
+    sudo: required
+    compiler: gcc
+  - os: linux
+    dist: xenial
+    sudo: required
+    compiler: gcc
+  - os: linux
+    dist: xenial
+    sudo: required
+    compiler: gcc
+  - os: linux
+    dist: xenial
+    sudo: required
+    compiler: gcc
+  - os: linux
+    dist: xenial
+    sudo: required
+    compiler: gcc
+  - os: linux
+    dist: xenial
+    compiler: gcc
+  - os: linux
+    dist: xenial
+    compiler: gcc
+  - os: linux
+    dist: xenial
+    compiler: gcc
+  - os: linux
+    dist: xenial
+    compiler: gcc
+
+
+  # Ubuntu 18.04 LTS (Bionic Beaver)
+  - os: linux
+    dist: bionic
+    compiler: gcc
+  - os: linux
+    dist: bionic
+    compiler: gcc
+  - os: linux
+    dist: bionic
+    compiler: gcc
+  - os: linux
+    dist: bionic
+    compiler: gcc
+
+
+  # OS X  
+  #- os: osx
+  #  compiler: clang
+
+script:
+  # build library and tests, install library
+  - mkdir -v build 
+  - cd build
+  - echo $(pwd)
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then
+      gcc -v;
+    else
+      clang -v;
+    fi
+  - cmake --version;
+  - cmake -DCMAKE_BUILD_TYPE=Release ..;
+  - make;
+  - sudo make install;
+
+notifications:
+  email: true
