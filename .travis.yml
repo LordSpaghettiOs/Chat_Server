@@ -5,54 +5,17 @@ matrix:
     dist: xenial
     sudo: required
     compiler: gcc
-  - os: linux
-    dist: xenial
-    sudo: required
-    compiler: gcc
-  - os: linux
-    dist: xenial
-    sudo: required
-    compiler: gcc
-  - os: linux
-    dist: xenial
-    sudo: required
-    compiler: gcc
-  - os: linux
-    dist: xenial
-    sudo: required
-    compiler: gcc
-  - os: linux
-    dist: xenial
-    compiler: gcc
-  - os: linux
-    dist: xenial
-    compiler: gcc
-  - os: linux
-    dist: xenial
-    compiler: gcc
-  - os: linux
-    dist: xenial
-    compiler: gcc
-
 
   # Ubuntu 18.04 LTS (Bionic Beaver)
   - os: linux
     dist: bionic
+    sudo: required
     compiler: gcc
-  - os: linux
-    dist: bionic
-    compiler: gcc
-  - os: linux
-    dist: bionic
-    compiler: gcc
-  - os: linux
-    dist: bionic
-    compiler: gcc
-
 
   # OS X  
-  #- os: osx
-  #  compiler: clang
+  - os: osx
+    sudo: required
+    compiler: clang
 
 script:
   # build library and tests, install library
