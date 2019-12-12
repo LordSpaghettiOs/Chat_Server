@@ -67,7 +67,6 @@ script:
   - cmake --version;
   - cmake -DCMAKE_BUILD_TYPE=Release ..;
   - make;
-  - sudo make install;
 
 notifications:
   email: true
